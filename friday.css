@@ -1,0 +1,26 @@
+body{
+	background-color: yellow;
+
+}
+p{
+	font-size: 30px;
+}
+.head{
+	height:150px; 
+}
+.tekst{
+	width: 80%;
+	height: 300px;
+	float: left;
+}
+.tekst2{
+	width: 80%;
+	height: 300px;
+	float: right;
+	
+}
+#bilde2{
+	float: left;
+	width: 20%;
+	
+}
