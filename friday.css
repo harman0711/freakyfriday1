@@ -56,9 +56,7 @@ h2{
 *{
 	box-sizing: border-box;
 }
-[class*="col-"]{
-	border: 1px solid black;
-}
+
 .col-small-10{width: 10%;}
 .col-small-30{width: 30%;}
 .col-small-40{width: 40%;}
