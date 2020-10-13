@@ -2,25 +2,77 @@ body{
 	background-color: yellow;
 
 }
+
+.header {
+  padding: 10px 16px;
+  background: yellow;
+  height: 100px;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+
 p{
-	font-size: 30px;
+	font-size: 26px;
 }
-.head{
-	height:150px; 
+h1{
+	font-size: 50px;
+	font-family: monospace;
 }
+h2{
+	font-family: monospace;
+	font-size: 35px;
+}
+
 .tekst{
-	width: 60%;
-	height: 300px;
+	
 	float: left;
+	
 }
-.tekst2{
-	width: 60%;
+.bilde{
 	height: 300px;
 	float: right;
-	
 }
-#bilde2{
+.mellomrom{
+	height: 50px;
+	width: 100%;
 	float: left;
-	width: 20%;
-	
 }
+
+
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+*{
+	box-sizing: border-box;
+}
+[class*="col-"]{
+	border: 1px solid black;
+}
+.col-small-10{width: 10%;}
+.col-small-30{width: 30%;}
+.col-small-40{width: 40%;}
+.col-small-60{width: 60%;}
+.col-small-80{width: 80%;}
+.col-small-100{width: 100%;}
+
+@media only screen and (max-width: 600px){
+.col-mobil-10{width: 10%;}
+.col-mobil-30{width: 30%;}
+.col-mobil-40{width: 40%;}
+.col-mobil-60{width: 60%;}
+.col-mobil-80{width: 80%;}
+.col-mobil-100{width: 100%;
+}
+
+
