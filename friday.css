@@ -20,16 +20,49 @@ body{
   padding-top: 102px;
 }
 
+.nav {
+  background-color: yellow;
+  overflow: hidden;
+  float: center;
+}
+
+.nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  width: 25%;
+  font-size: 2vw;
+  font-family: monospace;
+}
+
+.nav a:hover {
+  background-color: purple;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
 p{
-	font-size: 26px;
+	font-size: 1.7vw;
 }
 h1{
-	font-size: 50px;
+	font-size: 3vw;
 	font-family: monospace;
 }
 h2{
 	font-family: monospace;
-	font-size: 35px;
+	font-size: 2.5vw;
+}
+li{
+	font-family: monospace;
+	font-size: 1.7vw;
 }
 
 .tekst{
@@ -39,12 +72,17 @@ h2{
 }
 .bilde{
 	height: 300px;
-	float: right;
+	float: left;
 }
 .mellomrom{
 	height: 50px;
 	width: 100%;
 	float: left;
+}
+#bild{
+	position: absolute;
+	top: 500px;
+	right: 320px;
 }
 
 
@@ -57,15 +95,17 @@ h2{
 	box-sizing: border-box;
 }
 
-.col-small-10{width: 10%;}
+
+.col-small-33{width: 33.3%;}
 .col-small-30{width: 30%;}
 .col-small-40{width: 40%;}
+.col-small-50{width: 50%;}
 .col-small-60{width: 60%;}
 .col-small-80{width: 80%;}
 .col-small-100{width: 100%;}
 
 @media only screen and (max-width: 600px){
-.col-mobil-10{width: 10%;}
+.col-mobil-33{width: 33%;}
 .col-mobil-30{width: 30%;}
 .col-mobil-40{width: 40%;}
 .col-mobil-60{width: 60%;}
